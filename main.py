@@ -4,10 +4,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telegram.ext import Application, MessageHandler, CommandHandler, filters, CallbackQueryHandler
 from telegram.constants import ParseMode
 import os
-
-# Use environment variable to load the token
-TOKEN = '7663809864:AAHIfLfkJtM_xpcOwRp9w0zOC6b7E7wu-0Y'
-
+TOKEN = os.getenv('BOT_TOKEN')
 # List of user IDs that are exempt from message deletion
 EXEMPT_USER_IDS = [6545754981, 7379318591]  # Replace these with actual user IDs
 
